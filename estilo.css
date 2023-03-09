@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+p{
+    color: #333;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    position: relative;
+    max-width: 80px;
+}
+
+.nav-menu{
+    display: flex;
+}
+
+.nav-item{
+    list-style: none;
+}
+
+.nav-link{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.main{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.textbox{
+    position: relative;
+    max-width: 600px;
+}
+
+.textbox h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.textbox h2 span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.textbox a{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.imgbox{
+    position: relative;
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+  
+}
+
+.imgbox img{
+    max-width: 42%;
+}
+
+.thumb{
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.thumb li img{
+    max-width: 60px;
+}
+
+.social{
+    position: absolute;
+    top: 70%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social li{
+    list-style: none;
+}
+
+.social li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
